@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.css" />
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-sm  ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="javascript:void(0)">
+            <img src="imgs/loogo.avif" width="90px"  alt="Avatar Logo" style="width:40px;" class="rounded-pill"> 
+          </a>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="javascript:void(0)">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="javascript:void(0)">Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="javascript:void(0)">About</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="text" placeholder="Search">
+              <button class="btn" type="button">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    <div class="container ">
+        <div class="content row gap-5 mt-4 text-center">
+            <div class="item col-2 p-0 rounded bg-light" price="400">
+              <img src="imgs/Butter cake.jpg" alt="" class="w-100">
+              <h4 class="m-2">Butter cake</h4>
+              <button class="pt-2 pb-2 pe-4 ps-4 m-2 rounded">400 LE</button>
+            </div>
+            <div class="item col-2 p-0 rounded bg-light" price="300">
+                <img src="imgs/Cheese cake.jpg" alt="" class="w-100">
+                <h4 class="m-2">Cheese cake</h4>
+                <button class="pt-2 pb-2 pe-4 ps-4 m-2 rounded">300 LE</button>
+            </div>
+            <div class="item col-2 p-0 rounded bg-light" price="500">
+                <img src="imgs/Chocolate cake.jpg" alt="" class="w-100">
+                <h4 class="m-2">Chocolate cake</h4>
+                <button class="pt-2 pb-2 pe-4 ps-4 m-2 rounded">500 LE</button>
+            </div>
+            <div class="item col-2 p-0 rounded bg-light" price="600">
+                <img src="imgs/Black Forest Cake.jpg" alt="" class="w-100">
+                <h4 class="m-2">BForest Cake</h4>
+                <button class="pt-2 pb-2 pe-4 ps-4 m-2 rounded">600 LE</button>
+            </div>
+            <div class="item col-2 p-0 rounded bg-light" price="350">
+                <img src="imgs/Vanilla Cake.png" alt="" class="w-100">
+                <h4 class="m-2">Vanilla Cake</h4>
+                <button class="pt-2 pb-2 pe-4 ps-4 m-2 rounded">350 LE</button>
+            </div>
+            <div class="item col-2 p-0 rounded bg-light" price="150">
+                <img src="imgs/Funfetti cake.jpg" alt="" class="w-100">
+                <h4 class="m-2">Funfetti cake</h4>
+                <button class="pt-2 pb-2 pe-4 ps-4 m-2 rounded">150 LE</button>
+            </div>
+            <div class="item col-2 p-0 rounded bg-light" price="620">
+                <img src="imgs/Pineapple cake.png" alt="" class="w-100"> 
+                <h4 class="m-2">Pineapple cake</h4>
+                <button class="pt-2 pb-2 pe-4 ps-4 m-2 rounded">620 LE</button>
+            </div>
+            <div class="item col-2 p-0 rounded bg-light" price="290">
+                <img src="imgs/Lemon cake.jpg" alt="" class="w-100">
+                <h4 class="m-2">Lemon cake</h4>
+                <button class="pt-2 pb-2 pe-4 ps-4 m-2 rounded">290 LE</button>
+            </div>
+            <div class="item col-2 p-0 rounded bg-light" price="220">
+                <img src="imgs/Coffee cake.jpg" alt="" class="w-100">
+                <h4 class="m-2">Coffee cake</h4>
+                <button class="pt-2 pb-2 pe-4 ps-4 m-2 rounded">220 LE</button>
+            </div>
+            <div class="item col-2 p-0 rounded bg-light" price="320">
+                <img src="imgs/Banana cake.jpeg" alt="" class="w-100">
+                <h4 class="m-2">Banana cake</h4>
+                <button class="pt-2 pb-2 pe-4 ps-4 m-2 rounded">320 LE</button>
+            </div>
+        </div>
+    </div>
+    <h4 style="display: none;" class="selectedTitle text-center ">Your Selected Products</h4>
+    <div style="display: none;" class="container selected text-center p-4 h5"></div>
+    
+    <div class="button-container ">
+        <button class="showPrice m-4 text-center rounded" style="display: none;">Show Total Price</button>
+    </div>
+    <div class="totalPrice text-center h5"></div>
+
+    <footer class=" text-center text-white" style="background-color: rgb(180, 177, 177);">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-facebook"></i></a>
+    
+          <!-- Twitter -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+    
+          <!-- Google -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-google"></i
+          ></a>
+    
+          <!-- Instagram -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+    
+          <!-- Linkedin -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+    
+          <!-- Github -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+    
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: gray;">
+        © 2024 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/">Cake shop.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    
+
+    <script src="js/scribt.js"></script>
+</body>
+</html>

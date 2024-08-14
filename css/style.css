@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.content{
+    margin: 20px auto 40px auto;
+    width: 90%;
+}
+.content .item{
+    border: 3px solid gray;
+    cursor: pointer;
+    position: relative;
+}
+.item img{
+    width: 220px;
+    height: 200px;
+}
+.content .item button{
+    background-color: gray;
+    color: white;
+    border: none;
+    font-weight: bold   ;
+}
+.selected{
+    border: 3px solid gray;
+    border-radius: 3px;
+}
+.selectedTitle{
+    margin-bottom: 20px;
+}
+.button-container{
+    margin: auto;
+    width: 16%;
+}
+.showPrice{
+    width: 200px;
+    height: 60px;
+    background-color: gray;
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+.totalPrice{
+    margin-bottom: 40px;
+
+}
+nav {
+    background-color: gray;
+}
+.btn{   
+    background-color:rgb(207, 201, 201) ;
+    color: white;
+    font-weight: bold;
+}
+.btn:hover{
+    background-color: white;
+}
+.item::after{
+    position: absolute;
+    content: "";
+    background-color: rgba(84, 83, 83, 0.217);
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.2s;
+    z-index: 3;
+}
+.item:hover::after{
+    visibility: visible;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+}
+.nav-item a:hover{
+    opacity: 0.7;
+}
